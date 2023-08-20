@@ -6,7 +6,7 @@ const homePage = new HomePage();
 const loginForm = new LoginFormPage();
 
 describe(
-  "Log in a user to the plaform using the valid correct credentials when in resposnive",
+  "Log in a user to the plaform using the valid correct credentials when in responsive",
   {
     viewportHeight: 1920,
     viewportWidth: 991,
