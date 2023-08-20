@@ -5,9 +5,4 @@ export default class HomePageElements {
   userAvatarSmall = "be-navigation .be-avatar--small";
   userAvatarLarge = "be-navigation .be-avatar--large";
   logInButton = 'button[title="Log in"]';
-  usernameInputFiled = 'input[formcontrolname="username"]';
-  passwordInputField = '[type = "password"]';
-  loginButtonOnLoginForm = 'button[title="Login"]';
-  alert = ".be-form__alert";
-  inputFieldAlret = ".be-form__alert.ng-star-inserted";
 }

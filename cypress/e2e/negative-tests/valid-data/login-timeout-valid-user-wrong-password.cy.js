@@ -9,6 +9,7 @@ const loginForm = new LoginFormPage();
 
 describe("Log in a user to the plaform using the valid user and incorrect password", () => {
   beforeEach(() => {
+    // Visit the homepage
     cy.visit("");
     // Accept cookies
     homePage.acceptCookies();

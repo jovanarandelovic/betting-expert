@@ -1,31 +1,31 @@
 /// <reference types = "cypress"/>
 
-import HomePageElements from "../elements/home.page.elements";
+import LoginFormElements from "../elements/login.form.elements";
 
 export default class LoginFormPage {
   constructor() {
-    this.homePageElements = new HomePageElements();
+    this.loginFormElements = new LoginFormElements();
   }
 
-  //#region Login form
+  //#region Login form getters
   getUsernameInputField() {
-    return cy.get(this.homePageElements.usernameInputFiled);
+    return cy.get(this.loginFormElements.usernameInputFiled);
   }
 
   getPasswordInputField() {
-    return cy.get(this.homePageElements.passwordInputField);
+    return cy.get(this.loginFormElements.passwordInputField);
   }
 
   getLoginButtonOnLoginForm() {
-    return cy.get(this.homePageElements.loginButtonOnLoginForm);
+    return cy.get(this.loginFormElements.loginButtonOnLoginForm);
   }
 
   getLoginFormAlert() {
-    return cy.get(this.homePageElements.alert);
+    return cy.get(this.loginFormElements.alert);
   }
 
   getInputFieldAlert() {
-    return cy.get(this.homePageElements.inputFieldAlret);
+    return cy.get(this.loginFormElements.inputFieldAlret);
   }
   //#endregion
 
@@ -42,10 +42,6 @@ export default class LoginFormPage {
   clickLogin() {
     this.getLoginButtonOnLoginForm().click();
   }
-
-  //#endregion
-
-  //#region Resposnive testing
 
   //#endregion
 }
