@@ -19,6 +19,14 @@ export default class LoginFormPage {
   getLoginButtonOnLoginForm() {
     return cy.get(this.homePageElements.loginButtonOnLoginForm);
   }
+
+  getLoginFormAlert() {
+    return cy.get(this.homePageElements.alert);
+  }
+
+  getInputFieldAlert() {
+    return cy.get(this.homePageElements.inputFieldAlret);
+  }
   //#endregion
 
   //#region Actions
@@ -26,6 +34,7 @@ export default class LoginFormPage {
   enterUsername(username) {
     this.getUsernameInputField().type(username);
   }
+
   enterPassword(password) {
     this.getPasswordInputField().type(password);
   }
@@ -33,6 +42,7 @@ export default class LoginFormPage {
   clickLogin() {
     this.getLoginButtonOnLoginForm().click();
   }
+
   //#endregion
 
   //#region Resposnive testing
