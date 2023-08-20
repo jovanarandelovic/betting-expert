@@ -1,0 +1,10 @@
+.vscode
+*.code-workspace
+node_modules/
+._*
+.DS_*
+cypress.env.json
+screenshots/
+videos/
+downloads/
+*.log

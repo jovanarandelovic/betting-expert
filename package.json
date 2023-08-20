@@ -1,0 +1,14 @@
+{
+  "name": "betting-expert",
+  "version": "1.0.0",
+  "description": "cypress automation testing project for the website bettingexperts",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "author": "Jovana Randelovic",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.4"
+  }
+}
