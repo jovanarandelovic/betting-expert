@@ -3,13 +3,12 @@ https://docs.cypress.io/guides/getting-started/installing-cypress
 
 ---
 ## Step-by-step guide for project setup
- Open the terminal and run the commands:
- 
+ 1. Open the terminal and run the commands:
 ```bash
 git clone https://github.com/jovanarandelovic/betting-expert.git
 ```
 ```bash
- cd betting-expert
+cd betting-expert
 ```
 ```bash
 npm install
@@ -17,13 +16,7 @@ npm install
 ```bash
 npm run cy:open
 ```
-```bash
-add cypress.env.json to the cypress directory (provided in the email)
-```
-```bash
-Select E2E Testing
-```
-```bash
-Click E2E Testing in Chrome
-```
-Now run the tests in bulk or individually by clicking on the play button or the test file name
+2. Add cypress.env.json to the cypress directory (provided in the email)
+3. Select E2E Testing
+4. Click E2E Testing in Chrome
+5. Now run the tests in bulk or individually by clicking on the play button or the test file name
