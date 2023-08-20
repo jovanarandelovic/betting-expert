@@ -7,6 +7,7 @@ const loginForm = new LoginFormPage();
 
 describe("Log in a user to the plaform using the valid user and a password that has less than 8 characters", () => {
   before(() => {
+    // Visit the homepage
     cy.visit("");
     // Accept cookies
     homePage.acceptCookies();

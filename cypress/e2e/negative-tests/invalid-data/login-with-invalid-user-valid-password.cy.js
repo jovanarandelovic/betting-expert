@@ -7,6 +7,7 @@ const loginForm = new LoginFormPage();
 
 describe("Log in a user to the plaform using the invalid user and a valid password", () => {
   beforeEach(() => {
+    // Visit the homepage
     cy.visit("");
     // Accept cookies
     homePage.acceptCookies();
@@ -14,7 +15,7 @@ describe("Log in a user to the plaform using the invalid user and a valid passwo
     homePage.openLoginFormFromNavBar();
   });
 
-  it("should not log in a user with inavlid username and valid password", () => {
+  it("should not log in a user with invalid username and valid password", () => {
     loginForm.enterUsername(
       Cypress.env("invalidCredentials").wrongFormatUsername
     );

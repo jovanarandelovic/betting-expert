@@ -7,6 +7,7 @@ const loginForm = new LoginFormPage();
 
 describe("Log in a user to the plaform using the valid correct credentials", () => {
   beforeEach(() => {
+    // Visit the homepage
     cy.visit("");
     // Accept cookies
     homePage.acceptCookies();

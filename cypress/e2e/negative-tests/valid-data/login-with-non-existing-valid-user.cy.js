@@ -7,6 +7,7 @@ const loginForm = new LoginFormPage();
 
 describe("Log in a user to the plaform using the valid user that was not registered", () => {
   beforeEach(() => {
+    // Visit the homepage
     cy.visit("");
     // Accept cookies
     homePage.acceptCookies();
@@ -14,7 +15,7 @@ describe("Log in a user to the plaform using the valid user that was not registe
     homePage.openLoginFormFromNavBar();
   });
 
-  it("should not log in a user with correct email and incorrect password", () => {
+  it("should not log in a user with incorrect username and valid password", () => {
     loginForm.enterUsername(Cypress.env("validCredentials").wrongUsername);
     loginForm.enterPassword(Cypress.env("validCredentials").password);
     loginForm.getLoginButtonOnLoginForm().should("be.enabled");
@@ -22,7 +23,7 @@ describe("Log in a user to the plaform using the valid user that was not registe
     loginForm.getLoginFormAlert().should("have.text", " Invalid user ");
   });
 
-  it("should not log in a user with correct email and incorrect password", () => {
+  it("should not log in a user with incorrect email and valid password", () => {
     loginForm.enterUsername(Cypress.env("validCredentials").wrongEmail);
     loginForm.enterPassword(Cypress.env("validCredentials").password);
     loginForm.getLoginButtonOnLoginForm().should("be.enabled");

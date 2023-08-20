@@ -13,6 +13,7 @@ describe(
   },
   () => {
     before(() => {
+      // Visit the homepage
       cy.visit("");
       // Accept cookies
       homePage.acceptCookies();
