@@ -9,5 +9,5 @@ export default class HomePageElements {
   passwordInputField = '[type = "password"]';
   loginButtonOnLoginForm = 'button[title="Login"]';
   alert = ".be-form__alert";
-  inputFieldAlret = ".be-form__alert .ng-star-inserted";
+  inputFieldAlret = ".be-form__alert.ng-star-inserted";
 }
