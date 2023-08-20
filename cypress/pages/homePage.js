@@ -38,20 +38,6 @@ export default class HomePage {
   }
   //#endregion
 
-  //#region Login form
-  getUsernameInputField() {
-    return cy.get(this.homePageElements.usernameInputFiled);
-  }
-
-  getPasswordInputField() {
-    return cy.get(this.homePageElements.passwordInputField);
-  }
-
-  getLoginButtonOnLoginForm() {
-    return cy.get(this.homePageElements.loginButtonOnLoginForm);
-  }
-  //#endregion
-
   //#region Actions
   acceptCookies() {
     this.getCookieConsent().click();
@@ -61,16 +47,6 @@ export default class HomePage {
     this.getLoginButtonOnNavBar().click();
   }
 
-  enterUsername(username) {
-    this.getUsernameInputField().type(username);
-  }
-  enterPassword(password) {
-    this.getPasswordInputField().type(password);
-  }
-
-  clickLogin() {
-    this.getLoginButtonOnLoginForm().click();
-  }
   //#endregion
 
   //#region Resposnive testing

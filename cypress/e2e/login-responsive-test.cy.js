@@ -1,7 +1,9 @@
 /// <reference types="cypress" />
 
 import HomePage from "../pages/homePage";
+import LoginFormPage from "../pages/loginFormPage";
 const homePage = new HomePage();
+const loginForm = new LoginFormPage();
 
 describe(
   "Log in a user to the plaform using the valid correct credentials when in resposnive",
@@ -10,7 +12,7 @@ describe(
     viewportWidth: 991,
   },
   () => {
-    beforeEach(() => {
+    before(() => {
       cy.visit("");
       // Accept cookies
       homePage.acceptCookies();
@@ -20,10 +22,10 @@ describe(
     });
 
     it("should log in a user with correct email and password", () => {
-      homePage.enterUsername(Cypress.env("validCredentials").email);
-      homePage.enterPassword(Cypress.env("validCredentials").password);
-      homePage.getLoginButtonOnLoginForm().should("be.enabled");
-      homePage.clickLogin();
+      loginForm.enterUsername(Cypress.env("validCredentials").email);
+      loginForm.enterPassword(Cypress.env("validCredentials").password);
+      loginForm.getLoginButtonOnLoginForm().should("be.enabled");
+      loginForm.clickLogin();
       homePage.getHamburgerMenu().should("be.visible");
       homePage.clickHamburgerMenu();
       homePage.getUserAvatarInHamburgerMenu().should("be.visible");
