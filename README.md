@@ -20,3 +20,9 @@ npm run cy:open
 3. Select E2E Testing
 4. Click E2E Testing in Chrome
 5. Now run the tests in bulk or individually by clicking on the play button or the test file name
+
+---
+
+## Test scenario documentation
+
+https://docs.google.com/document/d/17XnWglkZ1352najSSO-k1B4OTjN6-jFJEMXTnAJjPxg/edit?usp=sharing
