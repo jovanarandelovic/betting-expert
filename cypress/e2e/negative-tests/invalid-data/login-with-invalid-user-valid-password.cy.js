@@ -29,6 +29,7 @@ describe("Log in a user to the plaform using the invalid user and a valid passwo
       );
   });
 
+  // needs more technical info about username requirements
   // there is no validation for the wrongly formatted email due to no limitations for the username format
   it.skip("should not log in a user with inccorrect email and valid password", () => {
     loginForm.enterUsername(Cypress.env("invalidCredentials").wrongFormatEmail);
